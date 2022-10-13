@@ -3,17 +3,26 @@ MLOps Intro Course
 
 
 # Lesson 1
-(optional): Create and activate a virtual environment 
+## Objectives
+* Get to know Docker main commands
+* Run an application in Docker
+* Start a service in Docker
+
+## Prerequisties
+* Docker installed
+* (optional): Create and activate a virtual environment 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
+## Steps
 1. Pull your desired image from DockerHub
 ```bash
 docker pull hello-world
 docker image ls
 ```
+
 2. Run container
 ```bash
 docker run hello-world
