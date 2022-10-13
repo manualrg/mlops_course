@@ -1,23 +1,14 @@
-# mlops_course
+# mlops_course: Lesson 1 - Your first app in Docker!
 MLOps Intro Course
 
+# Index
+1. Your first app in Docker!
+2. Pull an image from DockerHub
+3. Run Hello World container
+4. Run container interactively
+5. Start a Service: jupyter-lab environment
 
-# Lesson 1
-## Objectives
-* Get to know Docker main commands
-* Run an application in Docker
-* Start a service in Docker
-
-## Prerequisties
-* Docker installed
-* (optional): Create and activate a virtual environment 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-[Using Python Virtual Environment in VSCode](https://techinscribed.com/python-virtual-environment-in-vscode/)
-```
-
-## Steps
+# Steps
 1. Pull your desired image from DockerHub
 ```bash
 docker pull hello-world
