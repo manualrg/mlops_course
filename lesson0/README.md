@@ -3,7 +3,7 @@
 Set up a virtual environment to run project code
 
 # Create a virtual environment in Ubuntu (or WSL2)
-Create a Virtual Environment called .venv in project root folder
+Create a Virtual Environment called `.venv` in project root folder
 PYTHON_INTERPRETER=Path to Python installation, e.g. /usr/bin/python3.7
 ```
 virtualenv -p  <PYTHON_INTERPRETER> .venv

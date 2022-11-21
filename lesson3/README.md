@@ -1,4 +1,4 @@
-# mlops_course: Lesson 2 - Your first py process in Docker!
+# mlops_course: Lesson 3 - Deploy an inference Endpoint for RT predictions
 MLOps Intro Course
 
 # Index
