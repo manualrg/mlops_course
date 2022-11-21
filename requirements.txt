@@ -1,2 +1,6 @@
 pandas
 pandas_datareader==0.10.0
+fastapi
+uvicorn
+scikit-learn
+pydantic 
