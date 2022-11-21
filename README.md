@@ -1,74 +1,34 @@
-# mlops_course
-MLOps Intro Course
+# MLOps Intro Course
+
+The main goal of this course is to give a global overview mlops of tools, techniques and processess.
+
+The focus is not to teach concrete platforms (such us Kubeflow or MLFlow) but underlying techologies, like Docker, FastAPI, data validation tools and so on. In addition, advanced Machine Learning techniques are dicussed in context of MLOps, such us custom models.
 
 
-# Lesson 1
-## Objectives
+# Prerequisites
+* Install Python 3.6+
+* Install Docker (depends on OS)
+* Create a Virtual Environment (Lesson 0)
+
+
+# Lesson 0
+* Setup
+
+# Lesson 1: Your first app in Docker!
 * Get to know Docker main commands
 * Run an application in Docker
 * Start a service in Docker
 
-## Prerequisties
-* Docker installed
-* (optional): Create and activate a virtual environment 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+# Lesson 2:  Your first py process in Docker!
+* Simple example on how to Dockerize a Py process
 
-## Steps
-1. Pull your desired image from DockerHub
-```bash
-docker pull hello-world
-docker image ls
-```
+# Lesson 3: Deploy an inference Endpoint for RT predictions
+* FastAPI
+* Get model pickle
+* Deploy a model in FastAPI endpoint (local)
+* Add features to your endpoint: Data Validation and Storage Backend
+* Dockerize a prediction service (TODO)
 
-2. Run container
-```bash
-docker run hello-world
-```
+# Lesson 4: Dockerize a batch inference process (TODO)
 
-3. Pull a base image and run it interactively
-Pull image
-```bash
-docker pull python:3.7.9-slim
-docker image ls
-```
 
-```bash
-docker run python:3.7.9-slim
-docker run -d -t python:3.7.9-slim
-docker ps
-```
-copy CONTANIER_ID: 6441082fc62f or NAME: romantic_murdock
-
-```bash
-docker exec -it 6441082fc62f bash
-python --version
-pip list
-exit
-```
-
-Stop the container
-```bash
-docker stop 6441082fc62f
-docker ps -a
-```
-Container status is stored in exit state, but image is NOT modified (can be modified, but more on this later)
-
-```bash
-docker rm 6441082fc62f
-docker ps -a
-```
-
-4. Start a Service: jupyter-lab environment
-```bash
-docker pull jupyter/scipy-notebook
-docker image ls
-```
-Start a jupyter lab server inside the container
-
-```bash
-docker run -p 8888:8888 \
-    -e JUPYTER_ENABLE_LAB=yes jupyter/scipy-notebook
-```
